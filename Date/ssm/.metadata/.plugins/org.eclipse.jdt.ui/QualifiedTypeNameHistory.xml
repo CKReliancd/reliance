@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.atguigu.atcrowdfunding.manager.dao.UserDao"/>
+<fullyQualifiedTypeName name="com.atguigu.atcrowdfunding.manager.service.UserService"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.atguigu.atcrowdfunding.util.MD5Util"/>
+<fullyQualifiedTypeName name="com.atguigu.atcrowdfunding.manager.service.RoleService"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="org.springframework.boot.SpringApplication"/>
+<fullyQualifiedTypeName name="com.atguigu.atcrowdfunding.bean.Role"/>
+<fullyQualifiedTypeName name="com.atguigu.atcrowdfunding.util.Page"/>
+<fullyQualifiedTypeName name="com.atguigu.atcrowdfunding.manager.service.PermissionService"/>
+<fullyQualifiedTypeName name="com.atguigu.atcrowdfunding.bean.Permission"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.handler.HandlerInterceptorAdapter"/>
+<fullyQualifiedTypeName name="com.atguigu.atcrowdfunding.bean.User"/>
+<fullyQualifiedTypeName name="com.atguigu.crowdfunding.bean.User"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="com.atguigu.atcrowdfunding.util.StringUtil"/>
+<fullyQualifiedTypeName name="com.atguigu.atcrowdfunding.common.bean.Member"/>
+<fullyQualifiedTypeName name="com.atguigu.atcrowdfunding.exception.LoginException"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="org.springframework.util.MultiValueMap"/>
+<fullyQualifiedTypeName name="org.springframework.web.client.RestTemplate"/>
+<fullyQualifiedTypeName name="org.activiti.engine.delegate.ExecutionListener"/>
+<fullyQualifiedTypeName name="com.atguigu.atcrowdfunding.bean.Member"/>
+<fullyQualifiedTypeName name="com.atguigu.atcrowdfunding.util.Const"/>
+<fullyQualifiedTypeName name="org.activiti.engine.runtime.ProcessInstance"/>
+<fullyQualifiedTypeName name="org.apache.zookeeper.WatchedEvent"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="org.apache.zookeeper.Watcher"/>
+<fullyQualifiedTypeName name="org.apache.zookeeper.ZooDefs"/>
+<fullyQualifiedTypeName name="org.apache.zookeeper.ZooDefs.Ids"/>
+<fullyQualifiedTypeName name="org.apache.zookeeper.ZooKeeper"/>
+<fullyQualifiedTypeName name="org.apache.zookeeper.CreateMode"/>
+<fullyQualifiedTypeName name="junit.framework.Test"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.UUID"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+</qualifiedTypeNameHistroy>

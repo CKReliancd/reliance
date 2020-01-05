@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 引入默认主题的样式文件 -->
+<link rel="stylesheet" type="text/css" href="/Pro16_EasyUI_Demo/themes/default/easyui.css" />
+<!-- 引入图标样式文件 -->
+<link rel="stylesheet" type="text/css" href="/Pro16_EasyUI_Demo/themes/icon.css"/>
+<!-- 引入jQuery库的JS文件 -->
+<script type="text/javascript" src="/Pro16_EasyUI_Demo/scripts/jquery.min.js"></script>
+<!-- 引入EasyUI库的JS文件 -->
+<script type="text/javascript" src="/Pro16_EasyUI_Demo/scripts/jquery.easyui.min.js"></script>
+<!-- 引入EasyUI的本地化JS文件 -->
+<script type="text/javascript" src="/Pro16_EasyUI_Demo/scripts/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript">
+	
+// 	$(function(){
+		
+// 		//※初始化表单控件
+// 		$("#empForm").form({
+// 			onSubmit:function(){
+// 				//点击提交按钮之后，做后续处理
+				
+// 				//1.关闭表单所在窗口
+// 				$("#formWindow").window("close");
+				
+// 				//假设保存操作非常耗时，肯定刷新不到的写法
+// 				//$("#dg").datagrid("reload");
+				
+// 			},
+// 			success:function(response){
+				
+// 				//获取form控件的options数据，也就是属性数据
+// 				var options = $("#empForm").form("options");
+				
+// 				//获取当前表单的url地址值
+// 				var url = options.url;
+				
+// 				//2.刷新一下DataGrid，使用reload方法可以使页面显示的数据保持在当前页
+// 				//为了避免保存操作耗时导致刷新不到新数据，在成功获取到服务器响应数据后再刷新
+// 				//根据url地址的不同执行不同的刷新策略
+// 				if(url == "/Pro16_EasyUI_Demo/saveEmp") {
+					
+// 					//对保存操作来说应该回到第一页查看最新保存的数据
+// 					$("#dg").datagrid("load");
+// 				}
+				
+// 				if(url == "/Pro16_EasyUI_Demo/updateEmp") {
+// 					//对更新操作来说应该就在当前页刷新数据
+// 					$("#dg").datagrid("reload");
+// 				}
+				
+				
+				
+// 				//3.清理表单数据
+// 				//由于onSubmit事件的响应函数是在表单真正提交前执行，所以不能在onSubmit事件的响应函数中清理表单
+// 				//另外的一个证据是：在onSubmit事件的响应函数中return false能够阻止表单提交
+// 				$("#empForm").form("clear");
+// 			}
+// 		});
+		
+// 		//※初始化表单所在的窗口
+// 		$("#formWindow").window({
+// 			closed:true,
+// 			width:300,
+// 			height:200,
+// 			modal:true,
+// 			title:'员工档案管理系统'
+// 		});
+		
+// 		//※初始化表单的提交按钮
+// 		$("#formSubmitBtn").linkbutton({
+// 			iconCls:'icon-save',
+// 			onClick:function(){
+				
+// 				//提交表单
+// 				$("#empForm").form("submit");
+				
+// 			}
+// 		});
+		
+// 		$("#dg").datagrid({
+// 			url:"/Pro16_EasyUI_Demo/getEmpPage",
+// 		    columns:[[    
+// 		        {field:'empId',title:'编号',width:100},    
+// 		        {field:'empName',title:'姓名',width:100},    
+// 		        {field:'salary',title:'工资',width:100}    
+// 		    ]],
+// 		    fitColumns:true,
+// 		    singleSelect:true,
+// 		    pagination:true,
+// 		    fit:true,
+// 		    toolbar:[
+// 		    	{
+// 		    		iconCls:'icon-add',
+// 		    		text:'创建新员工信息',
+// 		    		handler:function(){
+		    			
+// 		    			//打开表单所在窗口
+// 		    			$("#formWindow").window("open");
+		    			
+// 		    			//设置表单提交的目标地址
+// 		    			$("#empForm").form({
+// 		    				url:"/Pro16_EasyUI_Demo/saveEmp"
+// 		    			});
+		    			
+// 		    		}
+// 		    	},
+// 		    	{
+// 		    		iconCls:'icon-remove',
+// 		    		text:'删除员工信息',
+// 		    		handler:function(){
+		    			
+// 		    			//1.获取用户选中的行
+// 		    			var rowJson = $("#dg").datagrid("getSelected");
+		    			
+// 		    			//2.判断rowJson是否为null
+// 		    			if(rowJson == null) {
+// 		    				$.messager.alert("员工档案管理系统","请选择您要删除的行！","info");
+// 		    				return ;
+// 		    			}
+		    			
+// 		    			//3.从rowJson中获取员工信息id
+// 		    			//{empId: 506, empName: "yyyy", salary: 987}
+// 		    			var empId = rowJson.empId;
+		    			
+// 		    			//4.把empId发送给后台实现删除
+// 		    			var url = "/Pro16_EasyUI_Demo/removeEmp/"+empId;
+// 		    			var paramData = {time:new Date()};
+// 		    			var callBack = function(response){
+// 		    				if(response == "success"){
+// 		    					$.messager.show({
+// 		    						title:"员工档案管理系统",
+// 		    						msg:"删除成功！",
+// 		    						timeout:3000
+// 		    					});
+		    					
+// 		    					//刷新一下DataGrid，使用reload方法可以使页面显示的数据保持在当前页
+// 		    					$("#dg").datagrid("reload");
+// 		    				}
+
+// 		    				if(response == "failed"){
+// 		    					$.messager.show({
+// 		    						title:"员工档案管理系统",
+// 		    						msg:"删除失败！",
+// 		    						timeout:3000
+// 		    					});
+// 		    				}
+// 		    			};
+// 		    			var type = "text";
+		    			
+// 		    			$.post(url, paramData, callBack, type);
+		    			
+// 		    		}
+// 		    	},
+// 		    	{
+// 		    		iconCls:'icon-edit',
+// 		    		text:'编辑新员工信息',
+// 		    		handler:function(){
+		    			
+// 		    			//获取当前选中的行
+// 		    			//1.获取用户选中的行
+// 		    			var rowJson = $("#dg").datagrid("getSelected");
+		    			
+// 		    			//2.判断rowJson是否为null
+// 		    			if(rowJson == null) {
+// 		    				$.messager.alert("员工档案管理系统","请选择您要编辑的行！","info");
+// 		    				return ;
+// 		    			}
+		    			
+// 		    			//打开表单所在窗口
+// 		    			$("#formWindow").window("open");
+		    			
+// 		    			//设置表单提交的目标地址
+// 		    			$("#empForm").form({
+// 		    				url:"/Pro16_EasyUI_Demo/updateEmp"
+// 		    			}).form("load",rowJson);
+// 		    		}
+// 		    	}
+// 		    ]
+// 		});
+// 	});
+	
+</script>
+</head>
+<body>
+
+	<table id="dg"></table>
+	
+	<div id="formWindow">
+		<form id="empForm" method="post">
+			<table style="margin-left: auto;margin-right: auto">
+				<tr>
+					<td>编号</td>
+					<td>
+						<input type="text" name="empId"/>
+					</td>
+				</tr>
+				<tr>
+					<td>姓名</td>
+					<td>
+						<input type="text" name="empName"/>
+					</td>
+				</tr>
+				<tr>
+					<td>工资</td>
+					<td>
+						<input type="text" name="salary"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align: center;">
+						<a id="formSubmitBtn">保存</a>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+</body>
+</html>

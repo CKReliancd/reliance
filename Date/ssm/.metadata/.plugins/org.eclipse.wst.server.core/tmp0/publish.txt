@@ -1,0 +1,9 @@
+#Tomcat publish data
+#Thu Aug 09 14:50:39 CST 2018
+org.eclipse.jst.j2ee.server\:atcrowdfunding-common=WEB-INF/lib/atcrowdfunding-common-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:atcrowdfunding-manager-api=WEB-INF/lib/atcrowdfunding-manager-api-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:atcrowdfunding-portal-impl=WEB-INF/lib/atcrowdfunding-portal-impl-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:atcrowdfunding-bean=WEB-INF/lib/atcrowdfunding-bean-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:atcrowdfunding-portal-api=WEB-INF/lib/atcrowdfunding-portal-api-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.jee.server\:/binary\:D\:\\server\\RepMaven\\org\\springframework\\spring-web\\4.0.0.RELEASE\\spring-web-4.0.0.RELEASE.jar=WEB-INF/lib/spring-web-4.0.0.RELEASE.jar
+org.eclipse.jst.j2ee.server\:atcrowdfunding-manager-impl=WEB-INF/lib/atcrowdfunding-manager-impl-0.0.1-SNAPSHOT.jar

@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<a href="handle01">handle01</a><br/>
+<a href="handle02">handle02</a><br/>
+
+
+
+<!-- <a href="hello">hello</a><br/>
+<a href="testmodelandview">测试modelandview</a><br/>
+<a href="testmap">方法入参是map</a><br/>
+<a href="testmodel">方法入参是model</a><br/>
+<a href="testmodelmap">方法入参是modelmap</a><br/>
+<a href="testSessionAttributes">testSessionAttributes</a>
+<br/>
+<h2>修改图书信息</h2>
+<form action="updateBook" method="post">
+	
+	private Integer id;
+	private String bookName;
+	private String author;
+	private Integer sales;
+	private Integer stock;
+	private Double price; 
+	<input type="hidden" name="id" value="1"/>
+	库存：<input type="text" name="stock" value="12"/><br>
+	销量：<input type="text" name="sales" value="21"/><br>
+	价格：<input type="text" name="price" value="98.98"/><br>
+	<input type="submit" value="修改图书"/>
+</form> -->
+</body>
+</html>

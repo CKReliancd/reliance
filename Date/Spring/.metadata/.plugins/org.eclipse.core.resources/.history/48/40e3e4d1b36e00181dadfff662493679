@@ -1,0 +1,38 @@
+package com.atguigu.utils;
+
+import java.util.Arrays;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+/**
+ * @Aspect
+ */
+public class LogUtils_stu {
+	
+	
+	/**
+	 * @Before表示前置操作
+	 * 具体的切人点是哪个
+	 * 通过切入点表达式告诉Spring对哪个类进行切入
+	 */
+	@Before(value = "execution(public int com.atguigu.interfaces.impl.Calculator.add(int, int))")
+	public static void logBefore(){
+		System.out.println("【LogUtils】目标方法之前是【method】方法，然后参数是：");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

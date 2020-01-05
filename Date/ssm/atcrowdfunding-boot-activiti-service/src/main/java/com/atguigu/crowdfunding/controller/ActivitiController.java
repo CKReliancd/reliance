@@ -1,0 +1,139 @@
+package com.atguigu.crowdfunding.controller;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.activiti.engine.RepositoryService;
+import org.activiti.engine.RuntimeService;
+import org.activiti.engine.TaskService;
+import org.activiti.engine.repository.ProcessDefinition;
+import org.activiti.engine.repository.ProcessDefinitionQuery;
+import org.activiti.engine.runtime.ProcessInstance;
+import org.activiti.engine.task.Task;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
+
+import com.atguigu.atcrowdfunding.controller.BaseController;
+
+@RestController
+public class ActivitiController extends BaseController {
+
+	@Autowired
+	private RepositoryService repositoryService;
+
+	@Autowired
+	private RuntimeService runtimeService ;
+	
+	@Autowired
+	private TaskService taskService ;
+
+	@RequestMapping("/act/completeTask")
+	public void completeTask(@RequestBody Map<String, Object> variables) {
+		//拿到当前任务的委托人
+		String loginacct = (String)variables.get("loginacct");
+		String piid = (String)variables.get("piid");
+		
+		/*
+		 * 找taskService的任务用{createTaskQuery()}拿到query对象，
+		 * 然后按照属于某个流程实例id{piid}{.processInstanceId(piid)}
+		 * 的委托人（loginacct）来查她的某一个任务{.singleResult()}
+		*/
+		Task task = taskService.createTaskQuery().processInstanceId(piid).taskAssignee(loginacct).singleResult();
+		
+		//完成任务方法，把任务id和流程变量（选择哪个流程）传进去
+		taskService.complete(task.getId(), variables);
+	}
+	
+	
+	/**
+	 * 启动流程实例
+	 * 
+	 * @param 包含，当前会员账号名称（用于第一个任务节点流程变量）
+	 * @return 流程实例id
+	 */
+	@RequestMapping("/act/startProcessInstance")
+	public String startProcessInstance(@RequestBody Map<String, Object> paramMap) {
+		ProcessDefinition processDefinition = repositoryService.createProcessDefinitionQuery()
+				.processDefinitionKey("authflow").latestVersion().singleResult();
+		ProcessInstance pi = runtimeService.startProcessInstanceById(processDefinition.getId(), paramMap);
+		return pi.getId();
+	}
+
+	@RequestMapping("/act/deleteDeployement/{deployid}")
+	public void deleteDeployement(@PathVariable("deployid") String deployid) {
+		repositoryService.deleteDeployment(deployid, true);// true表示级联删除数据
+	}
+
+	@RequestMapping("/act/loadImgById/{pdid}")
+	public byte[] loadImgById(@PathVariable("pdid") String pdid) {
+
+		ProcessDefinitionQuery query = repositoryService.createProcessDefinitionQuery();
+		ProcessDefinition pd = query.processDefinitionId(pdid).singleResult();
+		InputStream in = repositoryService.getResourceAsStream(pd.getDeploymentId(), pd.getDiagramResourceName());
+
+		ByteArrayOutputStream swapStream = new ByteArrayOutputStream(); // 内存流，写在了缓存区
+		byte[] buff = new byte[100]; // buff用于存放循环读取的临时数据
+		int rc = 0;
+		try {
+			while ((rc = in.read(buff, 0, 100)) > 0) {
+				swapStream.write(buff, 0, rc);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		byte[] in_b = swapStream.toByteArray(); // in_b为转换之后的结果
+		return in_b;
+	}
+
+	@RequestMapping("/act/deploy")
+	public String deploye(@RequestParam("pdfile") MultipartFile file) {
+		try {
+			repositoryService.createDeployment().addInputStream(file.getOriginalFilename(), file.getInputStream())
+					.deploy();
+			return "成功";
+		} catch (IOException e) {
+			e.printStackTrace();
+			return "失败";
+		}
+	}
+
+	@RequestMapping("/act/queryProDefCount")
+	public Integer queryProDefCount() {
+		Long count = repositoryService.createProcessDefinitionQuery().count();
+		return count.intValue();
+	}
+
+	@RequestMapping("/act/queryProDefList")
+	public List<Map<String, Object>> queryProDefList(@RequestBody Map<String, Object> paramMap) {
+
+		Integer startIndex = (Integer) paramMap.get("startIndex");
+		Integer pagesize = (Integer) paramMap.get("pagesize");
+		List<ProcessDefinition> listPage = repositoryService.createProcessDefinitionQuery().listPage(startIndex,
+				pagesize);
+
+		List<Map<String, Object>> pdMapList = new ArrayList<Map<String, Object>>();
+
+		for (ProcessDefinition pd : listPage) {
+			Map<String, Object> pdMap = new HashMap<String, Object>();
+			pdMap.put("id", pd.getId());
+			pdMap.put("key", pd.getKey());
+			pdMap.put("name", pd.getName());
+			pdMap.put("version", pd.getVersion());
+			pdMap.put("deployid", pd.getDeploymentId());
+			pdMapList.add(pdMap);
+		}
+
+		return pdMapList;
+	}
+
+}

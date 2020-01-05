@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1535678810571_0" label="collection" name="collection">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/collection-manager" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/collection-parent" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/collection-common" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/collection-bean" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/collection-main" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/collection-manager-impl" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1535678818468_1" label="Window Working Set" name="Aggregate for window 1535678818468"/>
+</workingSetManager>

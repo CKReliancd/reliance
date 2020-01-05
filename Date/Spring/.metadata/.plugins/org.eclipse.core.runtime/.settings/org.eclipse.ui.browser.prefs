@@ -1,0 +1,4 @@
+browser-choice=1
+browsers=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<web-browsers current\="2">\r\n<system/>\r\n<external location\="C\:\\Program Files\\Internet Explorer\\iexplore.exe" name\="Internet Explorer"/>\r\n<external location\="C\:\\Users\\Reliance\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe" name\="Chrome"/>\r\n</web-browsers>
+eclipse.preferences.version=1
+internalWebBrowserHistory=file\:/D\:/workspace/Spring/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1529120891121/index.html|*|http\://localhost\:8080/mvc_hello/method|*|http\://localhost\:8080/mvc_hello/index.jsp|*|http\://localhost\:8080/springWeb/transactionServlet|*|file\:/D\:/workspace/SpringMVC/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1528534281191/index.html|*|file\:/D\:/workspace/springMVC/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1528532408818/index.html|*|

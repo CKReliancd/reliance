@@ -1,0 +1,57 @@
+package com.atguigu.atcrowdfunding.controller;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.atguigu.atcrowdfunding.manager.service.UserService;
+
+@Controller
+public class DispatcherController {
+
+	@Autowired
+	private UserService userService;
+	
+	@RequestMapping("/index")//请求的时候加扩展名。htm是为了让核心控制器匹配上
+	public String index() {
+		return "index";
+	}
+	
+	@RequestMapping("/login")
+	public String login() {
+		return "login";
+	}
+	
+	@RequestMapping("/main.htm")
+	public String main() {
+		return "main";
+	}
+	
+	@RequestMapping("/doLogin")
+	public String doLogin(String loginacct, String userpswd, String usertype) {
+		
+		Map<String, Object> paramMap = new HashMap<String, Object>();
+		paramMap.put("loginacct", loginacct);
+		paramMap.put("userpswd", userpswd);
+		paramMap.put("usertype", usertype);
+		
+		User user = userService.queryUserByLogin(paramMap);
+		return "login";
+	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+}

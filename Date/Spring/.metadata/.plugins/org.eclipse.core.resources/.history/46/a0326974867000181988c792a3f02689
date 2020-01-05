@@ -1,0 +1,30 @@
+package com.atguigu.servlet;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
+
+import com.atguigu.service.TransactionService;
+
+/**
+ * Servlet implementation class TransactionServlet
+ */
+public class TransactionServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		// 我们要测试Spring容器中获取出来 的TransactionService依旧带有事务功能
+		ApplicationContext applicationContext = WebApplicationContextUtils
+				.getWebApplicationContext(getServletContext());
+		TransactionService transactionService = applicationContext
+				.getBean(TransactionService.class);
+		transactionService.updateTwoTable();
+
+	}
+
+}

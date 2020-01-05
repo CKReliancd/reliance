@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:jdbc.properties" />
+	</bean>
+
+	<!-- <context:property-placeholder location="classpath:jdbc.properties"/> -->
+
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="jdbcUrl" value="${jdbc.url}" />
+		<property name="user" value="${jdbc.user}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="driverClass" value="${jdbc.driverClass}" />
+	</bean>
+
+
+	<bean id="car" class="com.atguigu.pojo.Car">
+		<property name="name" value="宝马" />
+		<property name="carNo" value="琼B123321" />
+	</bean>
+
+	<bean id="personEL" class="com.atguigu.pojo.Person">
+
+		<!-- <property name="name" value="#{'这是EL表达式常量'}"/> -->
+		<!-- <property name="car" value="#{car}"/> -->
+		<!-- <property name="phone" value="#{car.name}"/> -->
+		<!-- <property name="name" value="#{car.fun1()}"></property> -->
+		<!-- <property name="name" value="#{T(com.atguigu.pojo.Car).staticFun()}"/> -->
+		<property name="salary" value="#{10*1024}" />
+
+
+
+
+
+
+
+
+	</bean>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</beans>

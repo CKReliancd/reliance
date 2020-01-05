@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="collection-manager"/>
+<aop-project name="collection-common"/>
+<aop-project name="collection-manager-impl"/>
+<aop-project name="collection-main"/>
+</aop-reference-model>

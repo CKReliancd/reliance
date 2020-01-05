@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1529887828333_1" label="atcrowdfunding-parent" name="atcrowdfunding-parent">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/atcrowdfunding-parent" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/atcrowdfunding-portal-impl" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/atcrowdfunding-portal-api" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1529922335642_3" label="atcrowdfunding" name="atcrowdfunding">
+<item elementID="=atcrowdfunding-main" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/atcrowdfunding-parent" type="4"/>
+<item elementID="=atcrowdfunding-bean" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=atcrowdfunding-manager-api" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=atcrowdfunding-portal-impl" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=atcrowdfunding-common" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=atcrowdfunding-manager-impl" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=atcrowdfunding-portal-api" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1530847119937_5" label="Atcrowdfunding_Boot" name="Atcrowdfunding_Boot">
+<item elementID="=atcorwdfunding-boot-portal" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=atcrowdfunding-boot-activiti-service" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=atcrowdfunding-boot-common" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=atcrowdfunding-boot-manager" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=atcrowdfunding-reg-center" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=atcrowdfunding-boot-member-service" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.springframework.ide.eclipse.ui.springWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1531138768684_5" label="sdf" name="sdf"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1532749200151_8" label="Spring-Eureka" name="Spring-Eureka">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SCMS-Parent" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1529652669746_0" label="Window Working Set" name="Aggregate for window 1529652669746"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1532581559313_6" label="Window Working Set" name="Aggregate for window 1532581559313"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1532697343276_7" label="Window Working Set" name="Aggregate for window 1532697343276"/>
+<mruList name="sdf"/>
+</workingSetManager>

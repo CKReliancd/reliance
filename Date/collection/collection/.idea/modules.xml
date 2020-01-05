@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/collection.iml" filepath="$PROJECT_DIR$/.idea/collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collection-bean/collection-bean.iml" filepath="$PROJECT_DIR$/collection-bean/collection-bean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collection-common/collection-common.iml" filepath="$PROJECT_DIR$/collection-common/collection-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collection-main/collection-main.iml" filepath="$PROJECT_DIR$/collection-main/collection-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collection-manager/collection-manager.iml" filepath="$PROJECT_DIR$/collection-manager/collection-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collection-manager-impl/collection-manager-impl.iml" filepath="$PROJECT_DIR$/collection-manager-impl/collection-manager-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collection-parent/collection-parent.iml" filepath="$PROJECT_DIR$/collection-parent/collection-parent.iml" />
+    </modules>
+  </component>
+</project>

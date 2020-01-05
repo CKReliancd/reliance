@@ -1,0 +1,62 @@
+package com.atguigu.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.atguigu.pojo.Book;
+import com.atguigu.service.BookService_stu;
+
+@RequestMapping(value = "/book")
+@Controller
+public class BookController_stu {
+
+	@Autowired
+	private BookService_stu bookService;
+
+	@RequestMapping(value="/list")
+	public ModelAndView list(){
+		List<Book> bookList = bookService.queryList();
+		//设置跳转去的地址是/jsp/bookList.jsp
+		ModelAndView modelAndView = new ModelAndView("bookList");
+		//保存到request域中
+		modelAndView.addObject("list", bookList);
+		return modelAndView;
+	}
+
+	@RequestMapping(value="/addBook")
+	public ModelAndView addBook(Book book){
+		bookService.saveBook(book);
+		ModelAndView modelAndView = new ModelAndView("redirect:/book/list");
+		return modelAndView;
+	}
+
+	@RequestMapping(value="/deleteBook")
+	public ModelAndView deleteBook(Integer id){
+		System.out.println("这是我要删除的图书id: " +id);
+		bookService.deleteBookById(id);
+		ModelAndView modelAndView = new ModelAndView("redirect:/book/list");
+		return modelAndView;
+	
+	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

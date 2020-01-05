@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-eureka=4
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-eureka-server=2
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-feign=3
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=1
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=ServiceInterface
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=1.5.14.RELEASE
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.description=RegistryCenter for Spring Boot
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.groupId=com.atguigu.distributed
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.javaVersion=1.8
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.language=java
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=ServiceProvider
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packageName=com.alibaba.dubbo.demo
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packaging=jar
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.type=MAVEN
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.version=0.0.1-SNAPSHOT
+org.springframework.ide.eclipse.boot.wizard.initializr.url=http\://start.spring.io\n

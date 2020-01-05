@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.atguigu.collection.manage.dao.OrganizationDao">
+	
+	<resultMap id="BaseResultMap" type="com.atguigu.collection.bean.SysOrganization">
+		<id column="id" property="id" jdbcType="INTEGER"/>	
+		<result column="create_time" property="createTime" jdbcType="DATE"/>	
+		<result column="modify_time" property="modifyTime" jdbcType="DATE"/>	
+		<result column="version" property="version" jdbcType="INTEGER"/>	
+		<result column="status" property="status" jdbcType="INTEGER"/>	
+		<result column="name" property="name" jdbcType="VARCHAR"/>	
+		<result column="parent_id" property="parentId" jdbcType="INTEGER"/>	
+		<result column="address" property="address" jdbcType="VARCHAR"/>	
+		<result column="phone" property="phone" jdbcType="VARCHAR"/>	
+		<result column="post_code" property="postCode" jdbcType="VARCHAR"/>	
+		<result column="fax" property="fax" jdbcType="VARCHAR"/>	
+		<result column="type" property="type" jdbcType="INTEGER"/>	
+		<result column="order_no" property="orderNo" jdbcType="INTEGER"/>	
+		<result column="code" property="code" jdbcType="VARCHAR"/>	
+		<result column="principal_id" property="principalId" jdbcType="VARCHAR"/>	
+		<result column="path" property="path" jdbcType="VARCHAR"/>	
+	
+	
+	</resultMap>
+	
+	
+	<select id="queryOrgList" resultMap="BaseResultMap">
+		select * from `sys_organization`
+	</select>
+
+  	<!-- <insert id="insert" parameterType="com.atguigu.collection.bean.SysOrganization">
+  		insert into sys_organization (parent_id,type,principal_id,name,address,phone,post_code,fax)
+  		values (#{parentId,jdbcType=INTEGER},
+  		#{type,jdbcType=INTEGER},
+  		#{principalId,jdbcType=VARCHAR},
+  		#{name,jdbcType="VARCHAR"},
+  		#{address,jdbcType="VARCHAR"},
+  		#{phone,jdbcType="VARCHAR"},
+  		#{code,jdbcType="VARCHAR"},#{fax,jdbcType="VARCHAR"})
+  	</insert> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</mapper>

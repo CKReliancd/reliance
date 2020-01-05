@@ -1,0 +1,116 @@
+package com.atguigu.atcrowdfunding.manager.service.impl;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.atguigu.atcrowdfunding.bean.Permission;
+import com.atguigu.atcrowdfunding.controller.BaseController;
+import com.atguigu.atcrowdfunding.manager.service.PermissionService;
+
+@Controller
+@RequestMapping("/permission")//父路径的映射
+public class PermissionController extends BaseController {
+
+	@Autowired
+	private PermissionService permissionService;
+	
+	@RequestMapping("/index")
+	public String index() {
+		return "permission/index";
+	}
+	
+	@RequestMapping("/toAdd")
+	public String toAdd() {
+		return "permission/add";
+	}
+	
+	
+	@ResponseBody
+	@RequestMapping("/loadData")
+	public Object loadData() {
+		
+		start();
+		
+		try {
+			
+			Permission root = null;
+			
+			List<Permission> allPermissionList = permissionService.queryAllPermission();
+			
+			/*
+			Map<Integer, Permission> allMap = new HashMap<Integer,Permission>();
+			for (Permission permission : allPermissionList) {
+				//以permission的id作为key，以permission为值
+				allMap.put(permission.getId(), permission);//getId放子节点的id？？如果是，为什么能放pid，pid对应的permission是什么
+				
+			}
+			
+			for (Permission permission : allPermissionList) {
+				if (permission.getPid() == null) {
+					root = permission;
+				} else {//permission父节点不为空，则是子节点，使用.getPid()，从allPermission找出父节点pid
+					Integer pid = permission.getPid();
+					//以字节点的父id  pid作为id把父节点找到了
+					Permission parent = allMap.get(pid);
+					//组合父与子节点之间的关系
+					parent.getChildren().add(permission);
+				}
+			}*/
+			
+			//嵌套循环太多了
+			for (Permission permission : allPermissionList) {
+				//找到根
+				if (permission.getPid() == null) {//permission的父节点为空，则permission事根节点
+					root = permission;
+				}else {//permission父节点不为空，则是子节点，使用.getPid()，从allPermission找出父节点pid
+					Integer pid = permission.getPid();
+					
+					for (Permission permission2 : allPermissionList) {
+						//如果有allPermissionList中的id等于父节点pid，则这个节点就是父节点
+						if (permission2.getId() == pid) {
+							//父节点的孩子的节点
+							permission2.getChildren().add(permission);
+						}
+					}
+				}
+			}
+			
+			data(root);
+			
+			success(true);
+		} catch (Exception e) {
+			success(false);
+			e.printStackTrace();
+		}
+		
+		return end();
+	}
+	
+	@ResponseBody
+	@RequestMapping("/doAdd")
+	public Object doAdd(Permission permission) {
+		start();
+		
+		try {
+			int count = permissionService.savePermission(permission);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		return end();
+	}
+	
+	
+	
+	
+	
+	
+	
+}

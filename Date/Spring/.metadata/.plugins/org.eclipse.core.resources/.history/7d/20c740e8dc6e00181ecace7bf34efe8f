@@ -1,0 +1,41 @@
+package com.atguigu.utils;
+
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.AfterThrowing;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+@Aspect
+@Component
+public class LogUtils_stu {
+//	com.atguigu.interfaces.impl.Calculator
+
+	@Before(value="execution(public int com.atguigu.interfaces.impl.Calculator.*(int, int))")
+//	@Before(value="execution(public int com.atguigu.interfaces.impl.Calculator.add(int, int))")
+	
+	public static void logBefore(JoinPoint jp) {
+		System.out.println("[LogUtils]目标方法之前是【method】方法，然后参数是：");	
+	}
+	
+	@AfterReturning(value="execution(public int com.atguigu.interfaces.impl.Calculator.*(int, int))")
+	public static void logAfterReturning() {
+		System.out.println("【LogUtils】目标方法 返回结果 是【 method 】方法，返回值是：，然后参数是：" );
+	}
+
+	@After(value="execution(public int com.atguigu.interfaces.impl.Calculator.*(int, int))")
+	public static void logAfter() {
+		System.out.println("【LogUtils】目标方法之后是【 method 】方法，然后参数是：");
+	}
+
+	/**
+	 * @AfterThrowing是异常通知
+	 */
+	@AfterThrowing(value="execution(public int com.atguigu.interfaces.impl.Calculator.*(int, int))")
+	public static void logAfterException() {
+		System.out.println("【LogUtils】目标方法异常之后是【  method 】方法，异常信息是：，然后参数是：" );
+	}
+
+		
+}

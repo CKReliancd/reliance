@@ -1,0 +1,25 @@
+package com.atguigu.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class HelloController_stu {
+
+	@RequestMapping(value="/param", params={"username"})
+	public String param(){
+		System.out.println("这是param方法");
+		return "param";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

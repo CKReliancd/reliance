@@ -1,0 +1,4 @@
+#Sun Jul 15 22:33:41 CST 2018
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=repositories location

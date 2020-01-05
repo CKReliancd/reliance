@@ -1,0 +1,8 @@
+package com.atguigu.service.test;
+
+import org.springframework.test.context.ContextConfiguration;
+
+@ContextConfiguration
+public class BookServiceTest_stu {
+
+}

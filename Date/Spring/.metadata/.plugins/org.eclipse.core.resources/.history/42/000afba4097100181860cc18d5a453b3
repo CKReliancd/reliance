@@ -1,0 +1,27 @@
+package com.atguigu.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HelloController_stu {
+
+	@RequestMapping(value="/param", params={"username=wzg168"})
+	public String param(){
+		System.out.println("这是param方法");
+		return "param";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

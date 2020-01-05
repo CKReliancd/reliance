@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1528534206290_0" label="JavaSE" name="JavaSE"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1528535084056_2" label="Spring" name="Spring">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Spring-hello" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Spring-aop" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/CRUD-stu" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Spring-JdbcTemplate" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Spring-ioc-stu" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Spring-aop-stu" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Spring-ioc" type="4"/>
+<item elementID="=Spring-hello/src&lt;com.atguigu.pojo{Person.java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Spring-JdbcTemplate-stu" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Spring-hello-stu" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Servers" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/mvc_hello-stu" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/crud" type="4"/>
+<item elementID="=last" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springWeb-stu" type="4"/>
+<item elementID="=ssm_stu" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Spring-transaction-stu" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/mvc_hello" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Spring-annotation" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Spring-Transaction" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/springWeb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Spring-hello-stu1" type="4"/>
+<item elementID="=last-stu" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Spring-annotation-stu" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1528534212736_1" label="Window Working Set" name="Aggregate for window 1528534212736"/>
+<mruList name="Spring"/>
+</workingSetManager>

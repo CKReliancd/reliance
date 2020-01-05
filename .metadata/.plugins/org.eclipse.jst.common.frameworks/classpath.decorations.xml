@@ -1,0 +1,15 @@
+<classpath>
+  <container id="SpringMVC_Hello!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="C:/Program Files/workspace/SpringMVC_Hello/WebContent/WEB-INF/lib/spring-context-4.0.0.RELEASE.jar">
+      <source-attachment-path>/SpringMVC_Hello/WebContent/WEB-INF/lib/spring-context-4.0.0.RELEASE.jar</source-attachment-path>
+    </entry>
+    <entry id="C:/Program Files/workspace/SpringMVC_Hello/WebContent/WEB-INF/lib/spring-web-4.0.0.RELEASE.jar">
+      <source-attachment-path>/SpringMVC_Hello/WebContent/WEB-INF/lib/spring-web-4.0.0.RELEASE.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="SpringMVC_HelloWorld!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="C:/Program Files/workspace/SpringMVC_HelloWorld/WebContent/WEB-INF/lib/spring-web-4.0.0.RELEASE.jar">
+      <source-attachment-path>C:/Program Files/workspace/SpringMVC_HelloWorld/WebContent/WEB-INF/lib/spring-web-4.0.0.RELEASE.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

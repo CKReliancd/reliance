@@ -1,0 +1,33 @@
+package com.atguigu.dao.Test;
+
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class BookDaoTest_stu {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

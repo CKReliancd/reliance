@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.atguigu.collection.entities&apos; to &apos;com.atguigu.collection.bean&apos;&#x0D;&#x0A;- Original project: &apos;collection-bean&apos;&#x0D;&#x0A;- Original element: &apos;collection-bean/src/main/java/com.atguigu.collection.entities&apos;&#x0D;&#x0A;- Renamed element: &apos;collection-bean/src/main/java/com.atguigu.collection.bean&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.atguigu.collection.entities&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.atguigu.collection.entities" name="com.atguigu.collection.bean" qualified="false" references="true" stamp="1535790352549" textual="false" version="1.0"/>
+</session>

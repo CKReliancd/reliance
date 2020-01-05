@@ -1,0 +1,82 @@
+
+8月 31, 2018 10:15:50.78 NEW SESSION
+8月 31, 2018 10:15:50.78 [16272:15076:0831/101550.775:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+8月 31, 2018 10:15:50.78 [16272:15076:0831/101550.775:ERROR:cache_util.cc(135)] Unable to move cache folder C:\Users\Reliance\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\Reliance\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+8月 31, 2018 10:15:50.78 [16272:15076:0831/101550.775:ERROR:disk_cache.cc(169)] Unable to create cache
+8月 31, 2018 10:15:50.78 [16272:15076:0831/101550.775:ERROR:shader_disk_cache.cc(600)] Shader Cache Creation failed: -2
+8月 31, 2018 10:15:53.37 �������е�������Ự�д����µĴ��ڡ�
+8月 31, 2018 10:16:43.93 [3172:20296:0831/101643.933:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+8月 31, 2018 10:16:43.93 [3172:20296:0831/101643.933:ERROR:cache_util.cc(135)] Unable to move cache folder C:\Users\Reliance\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\Reliance\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+8月 31, 2018 10:16:43.93 [3172:20296:0831/101643.933:ERROR:disk_cache.cc(169)] Unable to create cache
+8月 31, 2018 10:16:43.93 [3172:20296:0831/101643.933:ERROR:shader_disk_cache.cc(600)] Shader Cache Creation failed: -2
+8月 31, 2018 10:23:00.35 [6624:5660:0831/102300.353:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+8月 31, 2018 10:23:00.35 [6624:5660:0831/102300.353:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+8月 31, 2018 10:23:00.35 [6624:5660:0831/102300.353:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+8月 31, 2018 10:23:00.35 [6624:5660:0831/102300.353:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+8月 31, 2018 10:23:00.35 [6624:5660:0831/102300.353:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+8月 31, 2018 10:23:00.36 [6624:5660:0831/102300.353:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+8月 31, 2018 10:23:00.36 [6624:5660:0831/102300.353:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+8月 31, 2018 10:23:00.36 [6624:5660:0831/102300.353:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+8月 31, 2018 10:23:00.36 [6624:5660:0831/102300.353:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+8月 31, 2018 10:23:00.37 [6624:5660:0831/102300.353:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+8月 31, 2018 10:23:00.37 [6624:5660:0831/102300.353:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+8月 31, 2018 10:25:01.41 Unable to read VR Path Registry from C:\Users\Reliance\AppData\Local\openvr\openvrpaths.vrpath
+8月 31, 2018 10:31:17.48 [22468:6952:0831/103117.488:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+8月 31, 2018 10:31:17.48 [22468:6952:0831/103117.488:ERROR:cache_util.cc(135)] Unable to move cache folder C:\Users\Reliance\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\Reliance\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+8月 31, 2018 10:31:17.49 [22468:6952:0831/103117.488:ERROR:disk_cache.cc(169)] Unable to create cache
+8月 31, 2018 10:31:17.49 [22468:6952:0831/103117.488:ERROR:shader_disk_cache.cc(600)] Shader Cache Creation failed: -2
+8月 31, 2018 10:32:06.31 Unable to read VR Path Registry from C:\Users\Reliance\AppData\Local\openvr\openvrpaths.vrpath
+8月 31, 2018 10:32:14.21 [22468:14484:0831/103214.215:ERROR:CONSOLE(1)] "Uncaught (in promise) SyntaxError: Unexpected number", source: chrome-devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@9bbd2d0687bd83181f22ac13565501690ee5b4c7/&can_dock=true&dockSide=undocked (1)
+8月 31, 2018 10:32:14.21 [22468:14484:0831/103214.215:ERROR:CONSOLE(1)] "Uncaught (in promise) SyntaxError: Unexpected number", source: chrome-devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@9bbd2d0687bd83181f22ac13565501690ee5b4c7/&can_dock=true&dockSide=undocked (1)
+8月 31, 2018 10:32:14.22 [22468:14484:0831/103214.215:ERROR:CONSOLE(1)] "Uncaught (in promise) SyntaxError: Unexpected number", source: chrome-devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@9bbd2d0687bd83181f22ac13565501690ee5b4c7/&can_dock=true&dockSide=undocked (1)
+8月 31, 2018 10:37:52.44 Unable to read VR Path Registry from C:\Users\Reliance\AppData\Local\openvr\openvrpaths.vrpath
+8月 31, 2018 10:39:02.54 Unable to read VR Path Registry from C:\Users\Reliance\AppData\Local\openvr\openvrpaths.vrpath
+8月 31, 2018 14:06:11.72 Unable to read VR Path Registry from C:\Users\Reliance\AppData\Local\openvr\openvrpaths.vrpath
+8月 31, 2018 14:13:38.62 [21600:16796:0831/141338.623:ERROR:latency_info.cc(163)] Display::DrawAndSwap, LatencyInfo vector size 102 is too big.
+8月 31, 2018 14:13:40.21 [21600:16796:0831/141340.209:ERROR:latency_info.cc(163)] Display::DrawAndSwap, LatencyInfo vector size 102 is too big.
+8月 31, 2018 14:13:41.80 [21600:16796:0831/141341.800:ERROR:latency_info.cc(163)] Display::DrawAndSwap, LatencyInfo vector size 102 is too big.
+8月 31, 2018 14:13:43.35 [21600:16796:0831/141343.354:ERROR:latency_info.cc(163)] Display::DrawAndSwap, LatencyInfo vector size 102 is too big.
+
+8月 31, 2018 14:52:56.71 NEW SESSION
+8月 31, 2018 14:52:56.71 Unable to read VR Path Registry from C:\Users\Reliance\AppData\Local\openvr\openvrpaths.vrpath
+8月 31, 2018 15:20:12.53 [19740:5908:0831/152012.536:ERROR:CONSOLE(1)] "Uncaught (in promise) SyntaxError: Unexpected number", source: chrome-devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@9bbd2d0687bd83181f22ac13565501690ee5b4c7/&can_dock=true&dockSide=undocked (1)
+8月 31, 2018 15:20:12.54 [19740:5908:0831/152012.536:ERROR:CONSOLE(1)] "Uncaught (in promise) SyntaxError: Unexpected number", source: chrome-devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@9bbd2d0687bd83181f22ac13565501690ee5b4c7/&can_dock=true&dockSide=undocked (1)
+8月 31, 2018 15:20:12.54 [19740:5908:0831/152012.536:ERROR:CONSOLE(1)] "Uncaught (in promise) SyntaxError: Unexpected number", source: chrome-devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@9bbd2d0687bd83181f22ac13565501690ee5b4c7/&can_dock=true&dockSide=undocked (1)
+8月 31, 2018 15:36:09.34 Unable to read VR Path Registry from C:\Users\Reliance\AppData\Local\openvr\openvrpaths.vrpath
+8月 31, 2018 17:09:12.63 [21276:20568:0831/170912.629:ERROR:CONSOLE(1)] "Uncaught (in promise) SyntaxError: Unexpected number", source: chrome-devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@9bbd2d0687bd83181f22ac13565501690ee5b4c7/&can_dock=true&dockSide=undocked (1)
+8月 31, 2018 17:09:12.63 [21276:20568:0831/170912.630:ERROR:CONSOLE(1)] "Uncaught (in promise) SyntaxError: Unexpected number", source: chrome-devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@9bbd2d0687bd83181f22ac13565501690ee5b4c7/&can_dock=true&dockSide=undocked (1)
+8月 31, 2018 17:09:12.63 [21276:20568:0831/170912.630:ERROR:CONSOLE(1)] "Uncaught (in promise) SyntaxError: Unexpected number", source: chrome-devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@9bbd2d0687bd83181f22ac13565501690ee5b4c7/&can_dock=true&dockSide=undocked (1)
+8月 31, 2018 17:09:19.18 Unable to read VR Path Registry from C:\Users\Reliance\AppData\Local\openvr\openvrpaths.vrpath
+8月 31, 2018 17:20:05.17 Unable to read VR Path Registry from C:\Users\Reliance\AppData\Local\openvr\openvrpaths.vrpath
+8月 31, 2018 17:21:30.75 [11016:13508:0831/172130.758:ERROR:CONSOLE(1)] "Uncaught (in promise) SyntaxError: Unexpected number", source: chrome-devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@9bbd2d0687bd83181f22ac13565501690ee5b4c7/&can_dock=true&dockSide=undocked (1)
+8月 31, 2018 17:21:30.76 [11016:13508:0831/172130.758:ERROR:CONSOLE(1)] "Uncaught (in promise) SyntaxError: Unexpected number", source: chrome-devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@9bbd2d0687bd83181f22ac13565501690ee5b4c7/&can_dock=true&dockSide=undocked (1)
+8月 31, 2018 17:21:30.76 [11016:13508:0831/172130.758:ERROR:CONSOLE(1)] "Uncaught (in promise) SyntaxError: Unexpected number", source: chrome-devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@9bbd2d0687bd83181f22ac13565501690ee5b4c7/&can_dock=true&dockSide=undocked (1)
+8月 31, 2018 18:50:11.27 [24440:6964:0831/185011.274:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+8月 31, 2018 18:50:11.27 [24440:6964:0831/185011.274:ERROR:cache_util.cc(135)] Unable to move cache folder C:\Users\Reliance\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\Reliance\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+8月 31, 2018 18:50:11.27 [24440:6964:0831/185011.274:ERROR:disk_cache.cc(169)] Unable to create cache
+8月 31, 2018 18:50:11.27 [24440:6964:0831/185011.274:ERROR:shader_disk_cache.cc(600)] Shader Cache Creation failed: -2
+8月 31, 2018 18:50:59.87 Unable to read VR Path Registry from C:\Users\Reliance\AppData\Local\openvr\openvrpaths.vrpath
+
+9月 27, 2018 12:23:09.69 NEW SESSION
+9月 27, 2018 12:23:09.69 [21064:22708:0927/122309.696:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+9月 27, 2018 12:23:09.69 [21064:22708:0927/122309.696:ERROR:cache_util.cc(135)] Unable to move cache folder C:\Users\Reliance\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\Reliance\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+9月 27, 2018 12:23:09.70 [21064:22708:0927/122309.696:ERROR:disk_cache.cc(169)] Unable to create cache
+9月 27, 2018 12:23:09.70 [21064:22708:0927/122309.696:ERROR:shader_disk_cache.cc(600)] Shader Cache Creation failed: -2
+9月 27, 2018 12:23:21.65 [14960:21908:0927/122321.656:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9月 27, 2018 12:23:21.65 [14960:21908:0927/122321.656:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9月 27, 2018 12:23:21.65 [14960:21908:0927/122321.656:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9月 27, 2018 12:23:21.65 [14960:21908:0927/122321.656:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9月 27, 2018 12:23:21.66 [14960:21908:0927/122321.656:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9月 27, 2018 12:23:21.66 [14960:21908:0927/122321.656:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9月 27, 2018 12:23:21.66 [14960:21908:0927/122321.656:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9月 27, 2018 12:23:21.66 [14960:21908:0927/122321.656:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9月 27, 2018 12:23:21.66 [14960:21908:0927/122321.656:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9月 27, 2018 12:23:21.66 [14960:21908:0927/122321.656:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9月 27, 2018 12:23:21.66 [14960:21908:0927/122321.656:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9月 27, 2018 12:23:21.66 [14960:21908:0927/122321.656:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9月 27, 2018 12:23:21.66 [14960:21908:0927/122321.656:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9月 27, 2018 12:23:21.66 [14960:21908:0927/122321.656:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9月 27, 2018 12:23:21.66 [14960:21908:0927/122321.656:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9月 27, 2018 12:23:21.66 [14960:21908:0927/122321.656:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9月 27, 2018 12:23:21.67 [14960:21908:0927/122321.656:ERROR:in_progress_cache_impl.cc(191)] Cache is not initialized, cannot RetrieveEntry.
+9月 27, 2018 12:24:06.63 Unable to read VR Path Registry from C:\Users\Reliance\AppData\Local\openvr\openvrpaths.vrpath

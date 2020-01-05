@@ -1,0 +1,15 @@
+package com.atguigu.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class RegExpController_stu {
+
+	@RequestMapping(value = "/fu?")
+	public String fun(){
+		
+		System.out.println("这是fun1方法 ，fu?");
+		return "regexp";
+	}
+}

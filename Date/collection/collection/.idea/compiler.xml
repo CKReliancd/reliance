@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="collection-bean" />
+        <module name="collection-common" />
+        <module name="collection-main" />
+        <module name="collection-manager" />
+        <module name="collection-manager-impl" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="collection-bean" target="1.8" />
+      <module name="collection-common" target="1.8" />
+      <module name="collection-main" target="1.8" />
+      <module name="collection-manager" target="1.8" />
+      <module name="collection-manager-impl" target="1.8" />
+      <module name="collection-parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

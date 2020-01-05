@@ -1,0 +1,7 @@
+#Tomcat publish data
+#Thu Sep 27 12:25:39 CST 2018
+org.eclipse.jst.j2ee.server\:collection-manager-impl=WEB-INF/lib/collection-manager-impl-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:collection-common=WEB-INF/lib/collection-common-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:collection-bean=WEB-INF/lib/collection-bean-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.jee.server\:/binary\:D\:\\server\\RepMaven\\org\\springframework\\spring-web\\4.0.0.RELEASE\\spring-web-4.0.0.RELEASE.jar=WEB-INF/lib/spring-web-4.0.0.RELEASE.jar
+org.eclipse.jst.j2ee.server\:collection-manager=WEB-INF/lib/collection-manager-0.0.1-SNAPSHOT.jar

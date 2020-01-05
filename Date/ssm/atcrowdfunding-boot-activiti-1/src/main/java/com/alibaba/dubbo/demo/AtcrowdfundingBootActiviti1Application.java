@@ -1,0 +1,12 @@
+package com.alibaba.dubbo.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class AtcrowdfundingBootActiviti1Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(AtcrowdfundingBootActiviti1Application.class, args);
+	}
+}

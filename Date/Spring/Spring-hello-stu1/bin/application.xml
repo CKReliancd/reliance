@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="car1" class="com.atguigu.pojo.Car">
+		<property name="id" value="1"/>
+		<property name="name" value="布加迪威龙"/>
+	</bean>
+
+	<bean id="car2" class="com.atguigu.pojo.Car">
+		<property name="id" value="2"/>
+		<property name="name" value="迈巴赫"/>
+	</bean>
+	
+	<bean id="p7" class="com.atguigu.pojo.Person">
+		<property name="id" value="7"/>
+		<property name="name" value="华仔7"/>
+		<property name="age" value="187"/>
+		<property name="phone" value="18679998888"/>
+		<!-- name表示你要注入的哪个属性，ref 属性表示你要引用哪个对象 -->	
+		<property name="car" ref="car1" />	
+	</bean>
+	
+		<bean id="p8" class="com.atguigu.pojo.Person">
+		<property name="id" value="8"/>
+		<property name="name" value="华仔8"/>
+		<property name="age" value="888"/>
+		<property name="phone" value="18688888888"/>
+		<!-- name表示你要注入的哪个属性，ref 属性表示你要引用哪个对象 -->	
+		<property name="car">
+			<!-- 内部的bean标签定义的对象。无法通过Spring容器获取。只能在内部赋值使用 -->
+			<bean id="innerCar" class="com.atguigu.pojo.Car" p:id="22" p:name="内部汽车"/>
+		</property>	
+	</bean>
+	
+</beans>

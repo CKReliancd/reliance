@@ -1,0 +1,50 @@
+package com.atguigu.utils;
+
+import java.util.Arrays;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.Signature;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+/**
+ * @Aspect
+ */
+public class LogUtils_stu {
+	
+	
+	/**
+	 * @Before表示前置操作
+	 * 具体的切人点是哪个
+	 * 通过切入点表达式告诉Spring对哪个类进行切入
+	 */
+	@Before(value="execution(public int com.atguigu.interfaces.impl.Calculator.add(int, int))")
+	public static void logBefore(){
+		System.out.println("【LogUtils】目标方法之前是【method】方法，然后参数是：");
+	}
+	@Before(value="execution(public int com.atguigu.interfaces.impl.Calculator.add(int, int))")
+
+	public void showStartLog(JoinPoint joinPoint){
+		//得到函数的签名
+		Signature signature = joinPoint.getSignature();
+		//获取函数名
+		String name = signature.getName();
+		//获取函数的参数
+		Object[] args = joinPoint.getArgs();
+		System.out.println("前置通知  目标方法名称是" + name +"参数" + Arrays.asList(args));
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
