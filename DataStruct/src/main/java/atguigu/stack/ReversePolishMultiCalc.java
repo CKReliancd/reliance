@@ -10,6 +10,17 @@ import static java.util.regex.Pattern.compile;
 
 public class ReversePolishMultiCalc {
 
+
+    public static void main(String[] args) {
+        //String math = "9+(3-1)*3+10/2";
+        String math = "12.8 + (2 - 3.55)*4+10/5.0";
+        try {
+            doCalc(doMatch(math));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     /**
      * 匹配 + - * / ( ) 运算符
      */
@@ -109,7 +120,17 @@ public class ReversePolishMultiCalc {
 
         for (int i = 0; i < s.length(); i++) {
 
-            System.out.println(s.charAt(i));
+            System.out.printf("s.charAt(i) = %s",s.charAt(i));
+
+            System.out.println();
+
+            System.out.print("stack：");
+            stack.stream().forEach(System.out::print);
+
+            System.out.println();
+
+            System.out.print("data：");
+            data.stream().forEach(System.out::print);
 
             if (isSymbol(s.charAt(i) + "")) {
                 each = s.charAt(i) + "";
@@ -165,6 +186,9 @@ public class ReversePolishMultiCalc {
      */
     public static Double doCalc(List<String> list) {
         Double d = 0d;
+
+        ArrayList<String> result = new ArrayList<>();
+
         if (list == null || list.isEmpty()) {
             return null;
         }
@@ -173,22 +197,39 @@ public class ReversePolishMultiCalc {
             d = Double.valueOf(list.get(0));
             return d;
         }
-        ArrayList<String> list1 = new ArrayList<>();
+
         for (int i = 0; i < list.size(); i++) {
-            list1.add(list.get(i));
+
+            catList(list, i);
+
+            result.add(list.get(i));
+
+            catResult(result);
+
             if (isSymbol(list.get(i))) {
                 Double d1 = doTheMath(list.get(i - 2), list.get(i - 1), list.get(i));
-                list1.remove(i);
-                list1.remove(i - 1);
-                list1.set(i - 2, d1 + "");
-                list1.addAll(list.subList(i + 1, list.size()));
+                result.remove(i);
+                result.remove(i - 1);
+                result.set(i - 2, d1 + "");
+                result.addAll(list.subList(i + 1, list.size()));
                 break;
             }
         }
-        doCalc(list1);
+        doCalc(result);
         return d;
     }
 
+
+    private static void catList(List<String> list, int i) {
+        System.out.printf("list.get(i) = %s",list.get(i));
+    }
+
+
+    private static void catResult(List<String> result) {
+        System.out.print("result = ");
+        result.stream().forEach(System.out::print);
+        System.out.println();
+    }
     /**
      * 运算
      *
@@ -219,14 +260,5 @@ public class ReversePolishMultiCalc {
 
     }
 
-    public static void main(String[] args) {
-        //String math = "9+(3-1)*3+10/2";
-        String math = "12.8 + (2 - 3.55)*4+10/5.0";
-        try {
-            doCalc(doMatch(math));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
 }

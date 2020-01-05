@@ -1,5 +1,7 @@
 package atguigu.stack;
 
+import com.google.common.collect.*;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -10,7 +12,15 @@ import static java.util.regex.Pattern.compile;
 
 public class PolishMultiCalcDemo {
 
-
+    public static void main(String[] args) {
+        //String math = "9+(3-1)*3+10/2";
+        String math = "12.8 + (2 - 3.55)*4+10/5.0";
+        try {
+            doCalc(doMatch(math));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     /**
      * 匹配 + - * / ( ) 运算符
      */
@@ -112,11 +122,12 @@ public class PolishMultiCalcDemo {
      */
     public static List<String> doMatch(String s) throws Exception {
 
+
         if (s == null || "".equalsIgnoreCase(s.trim())) {
             throw new RuntimeException("data is Empty!!");
         }
 
-        if (isNumber(s.charAt(0) + "")) {
+        if (!isNumber(s.charAt(0) + "")) {
             throw new RuntimeException("Data illeagle,start not with a number");
         }
 
@@ -183,14 +194,13 @@ public class PolishMultiCalcDemo {
             } else if (i == s.length() - 1 || isSymbol(s.charAt(i + 1) + "")) {
                 /**
                  * 拼凑小数，当each到了s的末尾或者i的下一个是符号，那么上一个肯定是数字
-                 * 如果start == 0,那么刚开始，那么从s的第一个开始截取，后一个结束，的第
-                 * 一个字符，
-                 * 如果start !=0,那么start记录的是操作符的位置下标
-                 * ，s应该截取下一个字符开始，因为i是循环判断是不是字符，这时候的i+1？？？
+                 * subString(start,end),截取方式是包括start开始，不包括end结尾
+                 * 如果start == 0,那么开始截取start，到i+1也就是把下标为i的也截取进去
+                 * 如果start != 0,那么从上一个符号位置start+1开始算，start+1肯定就是数字，再把也就是i数字放进去
                  */
                 each = start == 0 ? s.substring(start, i + 1) : s.substring(start + 1, i + 1);
 
-                if(isNumber(each)){
+                if (isNumber(each)) {
                     data.add(each);
                     continue;
                 }
@@ -207,6 +217,99 @@ public class PolishMultiCalcDemo {
         System.out.println(data);
 
         return data;
+    }
+
+    /**
+     * 运算方法
+     *
+     * @param s1
+     * @param s2
+     * @param symbol
+     * @return
+     */
+    public static Double doTheMath(String s1, String s2, String symbol) {
+        Double result;
+        switch (symbol) {
+            case ADD:
+                result = Double.valueOf(s1) + Double.valueOf(s2);
+                break;
+            case MINUS:
+                result = Double.valueOf(s1) - Double.valueOf(s2);
+                break;
+            case TIMES:
+                result = Double.valueOf(s1) * Double.valueOf(s2);
+                break;
+            case DIVISION:
+                result = Double.valueOf(s1) / Double.valueOf(s2);
+                break;
+            default:
+                result = null;
+        }
+        return result;
+    }
+
+
+    /**
+     * 后缀表达式运算
+     *
+     * @param list
+     * @return
+     */
+    public static Double doCalc(List<String> list) {
+
+        Double d = 0d;
+
+        if (list == null || list.isEmpty()) {
+            return null;
+        }
+
+        if (list.size() == 1) {
+            System.out.println(list);
+            d = Double.valueOf(list.get(0));
+            return d;
+        }
+
+        List<String> result = Lists.newArrayList();
+
+        for (int i = 0; i < list.size(); i++) {
+
+            catList(list, i);
+
+            result.add(list.get(i));
+
+            catResult(result);
+
+            if (isSymbol(list.get(i))) {
+                Double calResult = doTheMath(list.get(i - 2), list.get(i - 1), list.get(i));
+
+                result.remove(i);
+                result.remove(i - 1);
+                result.set(i - 2, calResult + "");
+
+                catResult(result);
+
+                result.addAll(list.subList(i + 1, list.size()));
+
+                catResult(result);
+
+                break;
+            }
+        }
+
+        doCalc(result);
+
+        return d;
+    }
+
+    private static void catList(List<String> list, int i) {
+        System.out.printf("list.get(i) = %s",list.get(i));
+    }
+
+    private static void catResult(List<String> result) {
+        System.out.println();
+        System.out.print("result = ");
+        result.stream().forEach(System.out::print);
+        System.out.println();
     }
 
 
