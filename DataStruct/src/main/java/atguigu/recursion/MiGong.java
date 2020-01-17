@@ -8,6 +8,14 @@ public class MiGong {
         drawMap(map);
         setWay(map,1,1);
 
+        //输出新的地图，小球走过并标识过的递归
+        System.out.println("地图的情况");
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 7; j++) {
+                System.out.print(map[i][j]+" ");
+            }
+            System.out.println();
+        }
 
     }
 
@@ -37,11 +45,13 @@ public class MiGong {
                 if(setWay(map,i+1,j)) {//往下走
                     //如果通，则返回true
                     return true;
+                }else if (setWay(map,i,j+1)){
+                    return true;
                 } else if (setWay(map,i-1,j)){//往右走
                     return true;
-                }else if (setWay(map,i,j-1)){//往左走
+                } else if (setWay(map,i,j-1)){//往左走
                     return true;
-                }else {
+                } else {
                     //说明该点走不通，是死路
                     map[i][j] =3;
                     return false;
