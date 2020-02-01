@@ -10,7 +10,6 @@ import java.io.*;
 public class POI {
     public static void main(String[] args) {
 
-
         //1.创建一个webbook，对应一个Excel文件
         HSSFWorkbook wb = new HSSFWorkbook();
         //2.在建立的工作簿中添加一个sheet，对应Excell文件中的工作簿，并设置工作簿名称
