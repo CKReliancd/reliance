@@ -2,22 +2,17 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile name="Annotation profile for DataStruct" enabled="true">
-        <sourceOutputDir name="../target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="JUC" />
         <module name="DataStruct" />
-      </profile>
-      <profile name="Annotation profile for com.packging.juc" enabled="true">
-        <sourceOutputDir name="../../target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="com.packging.juc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="com.packging.juc" target="1.5" />
-      <module name="DataStruct" target="1.5" />
+      <module name="DataStruct" target="1.8" />
+      <module name="JUC" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

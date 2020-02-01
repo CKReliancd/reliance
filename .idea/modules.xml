@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/workspace.iml" filepath="$PROJECT_DIR$/workspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStruct/DataStruct.iml" filepath="$PROJECT_DIR$/DataStruct/DataStruct.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JUC/com.packging.juc.iml" filepath="$PROJECT_DIR$/JUC/com.packging.juc.iml" />
     </modules>
   </component>
 </project>
