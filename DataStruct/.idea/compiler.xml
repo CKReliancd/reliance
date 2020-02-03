@@ -9,18 +9,26 @@
         </processorPath>
         <module name="Reliance_CK.JucDemo.main" />
       </profile>
+      <profile name="Annotation profile for DataStruct" enabled="true">
+        <sourceOutputDir name="../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="DataStruct" />
+        <module name="JUC" />
+      </profile>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="JUC" />
-        <module name="DataStruct" />
+        <module name="guava" />
+        <module name="guava-testlib" />
+        <module name="guava-tests" />
+        <module name="guava-gwt" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="DataStruct.main" target="1.8" />
       <module name="DataStruct.test" target="1.8" />
-      <module name="guava-tests" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
